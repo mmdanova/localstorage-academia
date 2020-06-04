@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <title>LISTA DE TREINOS</title>
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top navbar-light " style="background: black">
+            <img src="./img/treino.png" class="rounded nav-item" style="width: 55px; height: 55px">
+            <h5 class="text-center nav-item" style="color: white; position: relative;">TREINOS</h5>
+            <a class="nav-item nav-link nav-item" href="addTreino.html" style="width: 55px; height: 55px">
+                <img src="./img/adicionar.png" class="rounded" style="width: 40px; height: 40px">
+            </a>
+        </nav>
+
+        <div class="container" style="padding: 25px; padding-top: 100px; padding-bottom: 50px">
+            <div class="row justify-content-md-center" >
+                <div class="col" style="height: 530px; overflow-y: scroll;">
+                    <span id="lbTreinos">
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar fixed-bottom navbar-light nav-fill">
+            <a class="nav-item nav-link" id="listarRegistros" href="listaCliente.html" style="background: black">
+                <img src="./img/clientes.png" class="rounded" style="width: 45px; height: 45px"><br>
+                <label style="color: white">CLIENTES</label>
+            </a>
+            <a class="nav-item nav-link" id="listarExercicios" href="listaExercicio.html"  style="background: black">
+                <img src="./img/exercicio.png" class="rounded" style="width: 45px; height: 45px"><br>
+                <label style="color: white">EXERCÍCIOS</label>
+            </a>
+            <a class="nav-item nav-link" id="listarTreinos" href="treinos.html" style="background: white">
+                <img src="./img/treinoPreto.png" class="rounded" style="width: 45px; height: 45px"><br>
+                <label style="color: black">TREINOS</label>
+            </a>
+        </nav>
+
+        <script type="text/javascript" src="./js/bootstrap/jquery-3.5.1.slim.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/addCliente.js"></script>
+        <script type="text/javascript" src="js/addTreino.js"></script>
+    </body>
+</html>

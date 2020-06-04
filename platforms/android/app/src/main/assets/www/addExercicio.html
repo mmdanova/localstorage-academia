@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <title>NOVO EXERCÍCIO</title>
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top"  style="background: black">
+            <img src="./img/exercicio.png" class="rounded nav-item" style="width: 55px; height: 55px">
+            <h5 class="text-center nav-item"  style="color: white; ">NOVO EXERCÍCIO</h5>
+            <a class="nav-item nav-link" href="#" style="width: 55px; height: 55px"><p> </p></a>
+        </nav>
+
+        <div class="container" style="padding: 35px; padding-top: 90px;">
+            <div class="row align-items-start" style="padding-top: 25px;">
+                <div class="col"  style="height: 520px; overflow-y: scroll;">   
+                    <label for="idNomeExercicio">Nome do Exercício</label>
+                    <input id="idNomeExercicio" type="text" class="form-control"><br>
+                    
+                    <label for="idAreaTrabalhada">Área Trabalhada</label>
+                    <input id="idAreaTrabalhada" type="text" class="form-control" placeholder="ex: ombro, biceps, etc..."><br>
+                    
+                    <label for="idEquipamentoUtilizado">Equipamento Utilizado</label>
+                    <input id="idEquipamentoUtilizado" class="form-control" type="text"><br>
+                    
+                    <label for="idCalGastasHora">Calorias por Hora</label>
+                    <input id="idCalGastasHora" type="number" class="form-control"><br>
+                </div>
+            </div>
+
+            <nav class="navbar fixed-bottom navbar-light nav-fill">
+                <a href="listaExercicio.html" class="btn btn-lg active" role="button" aria-pressed="true" style="background: red; color: white">CANCELAR</a>
+                <a href="listaExercicio.html" id="AddExercicio" class="btn btn-lg active" role="button" aria-pressed="true" style="background: green; color: white">
+                    SALVAR
+                </a>
+            </nav>
+        </div>
+
+        <script type="text/javascript" src="./js/bootstrap/jquery-3.5.1.slim.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/addExercicio.js"></script><!-- Chama as Funções -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="css/index.css"></script>
+    </body>
+</html>

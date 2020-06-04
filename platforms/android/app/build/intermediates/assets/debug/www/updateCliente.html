@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <title>CADASTRO DE CLIENTE</title>
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top"  style="background: black">
+            <img src="./img/clientes.png" class="rounded nav-item" style="width: 55px; height: 55px">
+            <h5 class="text-center nav-item"  style="color: white;">ATUALIZAR CLIENTE</h5>
+            <a class="nav-item nav-link nav-item" href="#" style="width: 55px; height: 55px"><p> </p></a>
+        </nav>
+
+        <div class="container" style="padding: 35px; padding-top: 90px;">
+            <div class="row align-items-start" style="padding-top: 25px;">
+                <div class="col"  style="height: 450px; overflow-y: scroll;">   
+                    <label for="idNomeCliente">Nome Completo</label>
+                    <input id="idNomeCliente" type="text" class="form-control"><br>
+
+                    <label for="idAlturaCliente">Altura</label>
+                    <input id="idAlturaCliente" type="number" class="form-control"><br>
+
+                    <label for="idPesoCliente">Peso</label>
+                    <input id="idPesoCliente" type="number" class="form-control"><br>
+                </div>
+            </div>
+
+            <nav class="navbar fixed-bottom navbar-light nav-fill">
+                <a href="#" id="VoltarIndex" class="btn btn-lg active" role="button" aria-pressed="true" style="background: red; color: white">CANCELAR</a>
+                <a href="#" id="AtualizarRegistro" class="btn btn-lg active" role="button" aria-pressed="true" style="background: green; color: white">
+                    SALVAR
+                </a>
+            </nav>
+        </div>
+
+        <script type="text/javascript" src="./js/bootstrap/jquery-3.5.1.slim.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/addCliente.js"></script>
+        <script type="text/javascript" src="js/updateCliente.js"></script>
+        <script type="text/javascript" src="css/index.css"></script>
+    </body>
+</html>

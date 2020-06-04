@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <title>CADASTRO DE CLIENTE</title>
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top"  style="background: black">
+            <img src="./img/clientes.png" class="rounded nav-item" style="width: 55px; height: 55px">
+            <h5 class="text-center nav-item"  style="color: white;">NOVO CLIENTE</h5>
+            <a class="nav-item nav-link nav-item" href="#" style="width: 55px; height: 55px"><p> </p></a>
+        </nav>
+
+        <div class="container" style="padding: 35px; padding-top: 90px;">
+            <div class="row align-items-start" style="padding-top: 25px;">
+                <div class="col"  style="height: 500px; overflow-y: scroll;">
+
+                    <label for="idNomeCliente">Nome Completo</label>
+                    <input id="idNomeCliente" type="text" class="form-control"><br>
+                    <!--<div class="form-group">
+                        <label for="idSexualidade">Sexualidade</label>
+                        <select class="form-control" id="idSexualidade" value="opcao">
+                          <option value="masculino">MASCULINO</option>
+                          <option value="faminino">FEMININO</option>
+                        </select>
+                    </div>
+                    <label for="idDtNascimentoCliente">Data de Nascimento</label>
+                    <input id="idDtNascimentoCliente" class="form-control" type="date" value="2020-05-16"><br>-->
+                    <label for="idAlturaCliente">Altura</label>
+                    <input id="idAlturaCliente" type="number" class="form-control"><br>
+                    
+                    <label for="idPesoCliente">Peso</label>
+                    <input id="idPesoCliente" type="number" class="form-control"><br>
+                </div>
+            </div>
+
+            <nav class="navbar fixed-bottom navbar-light nav-fill">
+                <a href="listaCliente.html" class="btn btn-lg active" role="button" aria-pressed="true" style="background: red; color: white">CANCELAR</a>
+                <a href="listaCliente.html" id="AddValue" class="btn btn-lg active" role="button" aria-pressed="true" style="background: green; color: white">
+                    SALVAR
+                </a>
+            </nav>
+        </div>
+
+        <script type="text/javascript" src="./js/bootstrap/jquery-3.5.1.slim.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/addCliente.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="css/index.css"></script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <title>PERFIL DE CLIENTE</title>
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top navbar-light " style="background: black">
+            <img src="./img/clientes.png" class="rounded nav-item" style="width: 55px; height: 55px">
+            <h5 class="text-center nav-item" style="color: white; position: relative;">PERFIL</h5>
+            <a class="nav-item nav-link nav-item" href="#" onclick="VoltarIndex(this)" id="VoltarRelatorio" style="width: 55px; height: 55px">
+                <img src="./img/voltar.png" class="rounded" style="width: 40px; height: 40px">
+            </a>
+        </nav>
+
+        <div class="container" style="padding: 25px; padding-top: 90px; padding-bottom: 60px">
+            <div class="card">
+              <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <h6 id="idNomeCliente"></h6>
+                        </div>
+                        <!--<div class="col-6 text-center">
+                            <label id="IdSexualidade"></label>
+                            <label id="IdDataNascimento"></label>
+                        </div>-->
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table">
+                                <tr class="text-center">
+                                    <td><b>Altura</b></td>
+                                    <td><b>Peso</b></td>
+                                    <td><b>IMC</b></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td id="idAlturaCliente"></td>
+                                    <td id="idPesoCliente"></td>
+                                    <td id="idValorIMC"></td>
+                                </tr>
+                            </table>
+                            <label><b>Situação: </b></label><label id="idSituacaoIMC"> </label>
+                          <!--<p  style="border-right: solid; border-left: solid;"></p>-->
+                        </div>
+                    </div>
+              </div>
+            </div><br>
+            <h6>Treinos</h6>
+            <div class="card">
+                    <table class="table">
+                        <thead >
+                            <th scope="col">Exercício</th>
+                            <th scope="col">Data</th>
+                            <th scope="col" style="text-align: right;">Duração</th>
+                        </thead>
+                    </table>
+                    <div style="height: 210px; overflow-y: scroll;">
+                        <span id="idRelatorio">
+                                                                                
+                        </span>
+                    </div>
+            </div>
+        </div>           
+
+        <script type="text/javascript" src="./js/bootstrap/jquery-3.5.1.slim.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/relatorioTreino.js"></script>
+    </body>
+</html>

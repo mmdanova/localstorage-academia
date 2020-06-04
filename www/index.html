@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <title>INICIAL</title>
+    </head>
+    <body style="background: black">
+
+        <div class="container d-flex justify-content-center" style="padding-top: 70px">
+            <div class="row">
+                <div class="col">
+                    <img src="./img/logo.png" class="rounded" style="width: 175px; height: 160px;">
+                    <h2 style="font-family: fantasy; color: white; text-align: center; border-bottom: solid; border-color: white">Black Fit</h2>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top: 80px">
+            <h5 style="color: white; text-align: center;">Controle seu Progresso</h5>
+        </div>
+
+        <nav class="navbar fixed-bottom navbar-light nav-fill" style="padding-bottom: 25px; padding-top: 15px">
+            <a class="nav-item nav-link border border-dark" id="listarRegistros" href="listaCliente.html" style="border-color: white">
+                <img src="./img/clientes.png" class="rounded" style="width: 45px; height: 45px"><br>
+                <label style="color: white">CLIENTES</label>
+            </a>
+            <a class="nav-item nav-link border border-dark" id="listarExercicios" href="listaExercicio.html"  style="border-color: white">
+                <img src="./img/exercicio.png" class="rounded" style="width: 45px; height: 45px"><br>
+                <label style="color: white">EXERCÍCIOS</label>
+            </a>
+            <a class="nav-item nav-link border border-dark" id="listarTreinos" href="treinos.html" style="border-color: white">
+                <img src="./img/treino.png" class="rounded" style="width: 45px; height: 45px"><br>
+                <label style="color: white">TREINOS</label>
+            </a>
+        </nav>
+
+        <script type="text/javascript" src="./js/bootstrap/jquery-3.5.1.slim.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/addCliente.js"></script>
+        <script type="text/javascript" src="js/addTreino.js"></script>
+        <script type="text/javascript" src="js/addExercicio.js"></script>
+    </body>
+</html>
